@@ -52,6 +52,7 @@ nav a{
 .journey-text{
     font-size: 14px;
     font-weight: 600;
+    color: #3A3A3A;
 
 }
 .journey-right{
@@ -174,6 +175,8 @@ nav a{
 .third-text{
     font-size: 14px;
     font-weight: 600;
+    color: #3A3A3A;
+
 
 }
 
@@ -216,7 +219,7 @@ nav a{
     .container{
         width: 100%;
     }
-    .journey, .collections, .third-section{
+    .journey, .collections, .third-section,footer{
         grid-template-columns: repeat(1,.5fr);
     }
     .journey-right, .collection, .third-left{
@@ -227,10 +230,10 @@ nav a{
     .container{
         width: 100%;
     }
-    .journey,  .third-section{
-        grid-template-columns: repeat(2,.5fr);
+    .journey, .collections, .third-section{
+        grid-template-columns: repeat(2,1fr);
     }
-    .collections{
+    footer{
         grid-template-columns: repeat(1,1fr);
     }
 
