@@ -1,1 +1,237 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    background-color: #FFFFFF;
+    width: 1047px;
+    padding: 30px;
+}
+.div-1{
+    margin-bottom: 50px;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    color: black;
+    margin-right: 15px;
+    padding-right: 10px;
+}
+.navmenu{
+    padding-top: 5px;
+}
+.journey{
+    display: grid;
+    grid-template-columns: 1fr .8fr;
+    margin-bottom: 50px;
+}
+.journey-left{
+    display: flex;
+    align-items: center;
+}
+.journey-title{
+    font-size: 50px;
+
+}
+.journey-text{
+    font-size: 14px;
+    font-weight: 600;
+
+}
+.journey-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.journey-right:hover{
+    transform: scale(0.5) rotate(60deg);
+    transition: transform 2s ease-in-out;
+}
+.journey-btn{
+    border-radius: 25px;
+    width: 25%;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    background-color: #E02C6D;
+    border-color: #E02C6D;
+    font-size: 15px;
+    font-weight: 700;
+}
+.fa-arrow-right{
+    padding-left: 5px;
+}
+.collections-title{
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3,.2fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.collection{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 15px;
+}
+.collection-detail h3{
+    font-size: 28px;
+    font-weight: 500;
+}
+.collection-detail p{
+    font-size: 24px;
+    font-weight: 400;
+}
+.collection-info p{
+    font-size: 13px;
+    font-weight: 600;
+    color: #787885;
+}
+.collection-info span{
+    font-size: 12px;
+    font-weight: 600;
+}
+.fa-star.filled{
+    color: #FFC014;
+    font-size: 12px;
+}
+.fa-star-half{
+    color: #FFC014;
+    font-size: 12px;
+}
+.see-text{
+    margin-top: 20px;
+    text-align: right;
+    color: #E02C6D;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.third-section{
+    display: grid;
+    grid-template-columns: .8fr 1fr;
+}
+.third-left{
+    width: 300px;
+    height: 220px;
+    border: 2px solid #E02C6D;
+    border-radius: 10px;
+    position: relative;
+    margin: 15px;
+    overflow: hidden;
+}
+.third-photo-detail{
+    display: none;
+    position: absolute;
+    width: 300px;
+    top: 0;
+}
+.third-photo-detail p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.third-photo-detail h3{
+    background-color: whitesmoke;
+    color: salmon;
+    text-align: center;
+}
+.third-left:hover .third-photo-detail{
+    display: block;
+    background-color: #db8aa8;
+}
+.third-right{
+    display: flex;
+    align-items: center;
+}
+.third-right-title{
+    font-size: 38px;
+
+}
+.third-text{
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 1100px;
+    background-color:  #0A0826;
+    padding-top: 50px;
+    margin-top: 15px;
+}
+
+.footer-detail{
+    text-align: center;
+    color: white;
+    line-height: 35px;
+}
+.footer-detail h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+.footer-detail p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.social-media{
+    padding-top: 15px;
+
+}
+.social-media i{
+    background-color: gray;
+    border-radius: 50%;
+    border: 1px solid grey;
+    padding: 5px;
+
+  }
+  
+  @media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    .journey, .collections, .third-section{
+        grid-template-columns: repeat(1,.5fr);
+    }
+    .journey-right, .collection, .third-left{
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 688px)and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .journey,  .third-section{
+        grid-template-columns: repeat(2,.5fr);
+    }
+    .collections{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
