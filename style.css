@@ -172,12 +172,10 @@ nav a{
     font-size: 38px;
 
 }
-.third-text{
+.third-right-text{
     font-size: 14px;
     font-weight: 600;
     color: #3A3A3A;
-
-
 }
 
 .footer{
@@ -219,8 +217,10 @@ nav a{
     .container{
         width: 100%;
     }
-    .journey, .collections, .third-section,footer{
+    .journey, .collections, .third-section,.footer{
         grid-template-columns: repeat(1,.5fr);
+        justify-items: center;
+        flex-direction: column;
     }
     .journey-right, .collection, .third-left{
         flex-direction: column;
@@ -232,9 +232,10 @@ nav a{
     }
     .journey, .collections, .third-section{
         grid-template-columns: repeat(2,1fr);
+        justify-items: center;
     }
     footer{
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1,.5fr);
     }
 
 }
